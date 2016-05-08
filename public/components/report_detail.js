@@ -4,9 +4,9 @@ const ReportDetail = ({reports}) => {
   console.log(reports)
 
   if(!reports) {
-    return <div> 
-      No Report Selected;
-    </div> 
+    return <h1 className="no-report-selected"> 
+      No report selected
+    </h1> 
   }
   
   return (

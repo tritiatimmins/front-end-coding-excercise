@@ -33,16 +33,18 @@ class App extends Component {
 
   render () {
     return ( 
-      <div className="main-container">
-       {/*search bar has it's own div container*/}
-        <SearchBar/>
-        <div className="col-md-4 report-container">
-          <ReportsList 
-          onReportSelect={selectedReport => this.setState({selectedReport})} 
-          reports={this.state.reports}/>
-        </div>
-        <div className=".col-md-8 report-detail">
-          <ReportDetail reports={this.state.selectedReport}/>
+      <div className="container">
+        <div className="row main-container">
+         {/*search bar has it's own div container*/}
+          <SearchBar/>
+          <div className="col-md-4 report-container">
+            <ReportsList 
+            onReportSelect={selectedReport => this.setState({selectedReport})} 
+            reports={this.state.reports}/>
+          </div>
+          <div className="col-md-8 report-detail">
+            <ReportDetail reports={this.state.selectedReport}/>
+          </div>
         </div>
       </div>
     );
