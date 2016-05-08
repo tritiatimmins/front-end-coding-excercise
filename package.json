@@ -4,19 +4,33 @@
   "description": "This is the coding exercise we give to all potential front-end team members. It consists of a few parts. Instructions are below.",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.11.0",
+    "babel-core": "^6.8.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
     "body-parser": "^1.15.0",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "faker": "^3.1.0",
     "lodash": "^4.11.2",
     "morgan": "^1.7.0",
-    "node-uuid": "^1.4.7"
+    "node-uuid": "^1.4.7",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.4.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0"
   },
   "devDependencies": {
     "eslint": "^2.9.0",
     "eslint-config-airbnb-base": "^2.0.0",
     "eslint-plugin-import": "^1.6.1",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "start": "node server/app.js",

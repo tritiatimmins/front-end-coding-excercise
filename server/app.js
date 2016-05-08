@@ -4,15 +4,18 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+
 const db = require('./datastore.js');
 
 const app = express();
 
 app.set('port', process.env.PORT || 3333);
-app.use(express.static('public', { index: false }));
+// app.use(express.static('public', { index: false }));
+app.use(express.static('public', { index: 'index.html' }));
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'combined'));
 app.use(bodyParser.json());
 app.use(cors());
+
 
 /* **************************************************************************
  * API

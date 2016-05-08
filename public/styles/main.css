@@ -1,0 +1,84 @@
+body {
+  background-color: #FCF7F6;
+  font-family: Helvetica, sans-serif;
+}
+
+/************************
+  main container (parent)
+*************************/
+.main-container {
+  background-color: white;
+  width: 90%;
+  height: 500px;
+  margin: 50px auto;
+  overflow: auto;
+  border: 1px gray;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px gray;
+}
+
+/************************
+  search bar/heading (top child)
+*************************/
+
+.search-bar {
+  width: 100%;
+  background-color: #F5EFEF;
+  padding: 20px;
+  box-shadow: 1px 1px 1px gray;
+}
+
+input {
+  padding: 10px;
+  width: 25%;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px soild lightgray;
+}
+
+/************************
+  report list (right child) 
+*************************/
+
+.report-container {
+  margin: 0 auto;
+  float: left;
+  background-color: white;
+  display: inline-block;
+  width: 30%;
+  height: inherit;
+  overflow: auto;
+  border: 1px solid lightgray;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 left;
+  padding: 0;
+
+}
+
+.report-items {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  padding: 20px;
+}
+
+.report-items:hover{
+  background-color: lightgray;
+}
+
+/************************
+  report detail (left child)
+*************************/
+
+.report-detail {
+  width: 70%;
+  height: inherit;
+  float: right;
+  text-align: left;
+  margin: 0px right;
+  display: inline-block;
+}
