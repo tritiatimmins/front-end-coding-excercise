@@ -4,15 +4,15 @@ const ReportDetail = ({reports}) => {
   console.log(reports)
 
   if(!reports) {
-    return <h1 className="no-report-selected"> 
+    return <h1 className="no-report-selected">
       No report selected
     </h1> 
   }
   
   return (
-    <div>
-      <h1 className="reportTitle">{reports.title}</h1>
-      <h3 className="reportBody">{reports.body}</h3>
+    <div className="col-md-8 report-detail">
+      <h1>{reports.title}</h1>
+      <p>{reports.body}</p>
     </div>
   )
 

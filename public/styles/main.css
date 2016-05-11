@@ -61,15 +61,15 @@ ul {
 
 }
 
-.title-preview {
-  /*padding: 5px;*/
+/*.title-preview {
+  padding: 5px;
   margin: 20px auto;
-}
+}*/
 
 .report-items {
   width: 100%;
   border-top: 1px solid lightgray;
-  padding: 10px;
+  padding-left: 10px;
   text-align: left;
 }
 
@@ -83,9 +83,9 @@ ul {
 
 .report-detail {
   padding: 20px;
-  margin-left: 20px;
+  margin: 0 auto;
+  text-align: left;
 }
-
 
 .no-report-selected {
   text-align: center;

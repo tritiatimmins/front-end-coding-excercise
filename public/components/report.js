@@ -6,8 +6,10 @@ const Report = ({report, onReportSelect}) => {
   console.log(report);
 
   return (
-    <li onClick={() => onReportSelect(report)} className="report-items">
-      <div className="title-preview">{report.title}</div>
+    <li 
+      onClick={() => onReportSelect(report)} 
+      className="report-items">
+        <div className="title-preview">{report.title}</div>
     </li>
   );
 

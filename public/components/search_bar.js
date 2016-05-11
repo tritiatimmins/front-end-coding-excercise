@@ -10,17 +10,24 @@ class SearchBar extends Component {
     this.state = { searchTerm: '' };
   }
 
+
   //update state
   render () {
     return ( 
       <div className="search-bar">
         <input 
+          type="text"
           value={this.state.searchTerm}
-          onChange={event => this.setState({ searchTerm: event.target.value })} />
+          onChange={event => this.setState({ searchTerm: event.target.value })}
+          placeholder="Filter..."
+          />
       </div>
      ) 
   }
 
+//set state with a term
+//call callback with a term
+//onChange -> should show new lis
 
 }
 
