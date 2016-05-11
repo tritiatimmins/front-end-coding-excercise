@@ -2,10 +2,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Report from './report';
+import SearchBar from './search_bar';
 
 const ReportsList = (props) => {
-  const dates = props.reports.created;
-  console.log(dates);
+  // const dates = props.reports.created;
   const reportItems = props.reports.map((report) => {
     return (
       <Report 
@@ -23,6 +23,7 @@ const ReportsList = (props) => {
       </ul>
     </div>
   );
+
 }
 
 export default ReportsList;

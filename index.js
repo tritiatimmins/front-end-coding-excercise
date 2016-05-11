@@ -35,14 +35,12 @@ class App extends Component {
     return ( 
       <div className="container">
         <div className="row main-container">
-          <SearchBar/>
+          <SearchBar reports={this.state.reports}/>
             <ReportsList 
             onReportSelect={selectedReport => this.setState({selectedReport})} 
             reports={this.state.reports}
             />
-            <ReportDetail 
-              reports={this.state.selectedReport}
-            />
+            <ReportDetail reports={this.state.selectedReport}/>
         </div>
       </div>
     );

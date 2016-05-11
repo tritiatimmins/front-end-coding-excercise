@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ReportDetail = ({reports}) => {
-  console.log(reports)
 
   if(!reports) {
     return <h1 className="no-report-selected">
