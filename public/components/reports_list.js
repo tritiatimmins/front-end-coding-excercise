@@ -2,10 +2,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Report from './report';
-import SearchBar from './search_bar';
 
 const ReportsList = (props) => {
-  // const dates = props.reports.created;
+
   const reportItems = props.reports.map((report) => {
     return (
       <Report 
@@ -27,5 +26,3 @@ const ReportsList = (props) => {
 }
 
 export default ReportsList;
-
-//map by date created in report items

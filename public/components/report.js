@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './search_bar';
 
 const Report = ({report, onReportSelect}) => {
   
@@ -9,7 +10,7 @@ const Report = ({report, onReportSelect}) => {
     <li 
       onClick={() => onReportSelect(report)} 
       className="report-items">
-        <div className="title-preview">{report.title}</div>
+       {report.title}
     </li>
   );
 

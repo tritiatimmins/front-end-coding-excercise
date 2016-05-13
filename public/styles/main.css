@@ -61,16 +61,13 @@ ul {
 
 }
 
-/*.title-preview {
-  padding: 5px;
-  margin: 20px auto;
-}*/
-
 .report-items {
   width: 100%;
   border-top: 1px solid lightgray;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
+  padding: 10px;
   text-align: left;
+
 }
 
 .report-items:hover{

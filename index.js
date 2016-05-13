@@ -37,8 +37,8 @@ class App extends Component {
         <div className="row main-container">
           <SearchBar reports={this.state.reports}/>
             <ReportsList 
-            onReportSelect={selectedReport => this.setState({selectedReport})} 
-            reports={this.state.reports}
+              onReportSelect={selectedReport =>this.setState({selectedReport})} 
+              reports={this.state.reports}
             />
             <ReportDetail reports={this.state.selectedReport}/>
         </div>
